@@ -1,5 +1,5 @@
 # Laad aanvragen
-source("Aanvragen.R")
+source("Processen/Aanvragen.R")
 materiaal <- unique(dfAanvraagCorr$Materiaal)
 
 # Bereken uiterste productiedatum (reserveer 2 dagen expeditie uit)
@@ -39,7 +39,6 @@ lstProductie <- as.list(NULL)
 
 for (m in materiaal) {
   s <- which(materiaal == m)
-  print(per_proddatum[per_proddatum$Materiaal == m,])
   lstProductie[s] <- list(per_proddatum[per_proddatum$Materiaal == m,])
 }  
 
@@ -59,6 +58,7 @@ yrange <- range(per_proddatum$Kosten)
 par(mfrow=c(2,length(materiaal)))
 
 # Bouw plots
+
 for (i in materiaal) {
   
   k <- which(materiaal == i)
@@ -73,7 +73,8 @@ for (i in materiaal) {
 }
 
 # Voeg titels toe 
-title("Totale kosten per dag")
+title("Totale kosten per aanvraagdatum")
+
 
 for (i in materiaal) {
   
@@ -88,3 +89,5 @@ for (i in materiaal) {
   lines(per_proddatum$Productiedatum, per_proddatum$Kosten, type="b", lwd=1.5, lty=linetype[k], col=colors[k]) 
 }
 
+# Voeg titels toe 
+title("Totale kosten per productiedatum")

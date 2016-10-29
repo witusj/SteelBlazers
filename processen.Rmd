@@ -10,7 +10,7 @@ Hier worden de processen beschreven.
 ### Aanvraag
 De klant stuurt een aanvraag per mail. De aanvraag moet minimaal volgende gegevens bevatten:
 
-1. Naam en gegevens
+1. Naam en contactgegevens
 2. Technische tekening
 3. Hoeveelheid
 4. Materiaal
@@ -28,11 +28,15 @@ render_graph(graph, width = 900, height = 700)
 ### Calculatie
 De Calculator berekent hoeveel materiaal nodig is om de bestelling te realiseren, controleert of er voldoende capaciteit is om binnen de gevraagde levertermijn te kunnen leveren en berekent de totale kosten.
 Zie [hier](https://raw.githubusercontent.com/witusj/SteelBlazers/master/kosten.csv) voor een overzicht van de berekende kosten per aanvraag. Het kostenoverzicht met een bevestiging van de levertermijn wordt teruggestuurd naar de verkoopafdeling.
+
+```{r echo=FALSE, echo=FALSE, message=FALSE}
+source("Processen/Calculatie.R")
+```
+
 ```{r echo=FALSE, message=FALSE}
 source("Processen/DiagCalculatie.R")
 render_graph(graph, width = 900, height = 700)
 ```
-
 <hr>
 
 ### Offerte
@@ -42,6 +46,7 @@ De verkoopafdeling controleert of de klant met de waarde van de bestelling nog b
 source("Processen/DiagOfferte.R")
 render_graph(graph, width = 900, height = 700)
 ```
+
 
 <hr>
 
