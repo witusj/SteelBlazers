@@ -3,6 +3,8 @@ title: "Processen"
 output: html_document
 ---
 
+## {.tabset}
+
 Hier worden de processen beschreven.
 
 ### Aanvraag
