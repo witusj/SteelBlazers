@@ -1,0 +1,82 @@
+---
+title: "Processen"
+author: "Witek ten Hove"
+date: "10/29/2016"
+output: html_document
+---
+
+## Processen {.tabset}
+
+Hier worden de processen beschreven.
+
+### Aanvraag
+
+```{r echo=FALSE, message=FALSE}
+source("Processen/DiagAanvraag.R")
+render_graph(graph, width = 900, height = 700)
+```
+
+De klant stuurt een aanvraag per mail. De aanvraag moet minimaal volgende gegevens bevatten:
+
+1. Naam en gegevens
+2. Technische tekening
+3. Hoeveelheid
+4. Materiaal
+5. Gewenste levertermijn
+
+Als alle de aanvraag geen omissies bevat, krijgt de klant een bevestiging dat de aanvraag in goede orde is ontvangen.
+<hr>
+
+### Calculatie
+
+```{r echo=FALSE, message=FALSE}
+source("Processen/DiagCalculatie.R")
+render_graph(graph, width = 900, height = 700)
+```
+<hr>
+
+### Offerte
+
+```{r echo=FALSE, message=FALSE}
+source("Processen/DiagOfferte.R")
+render_graph(graph, width = 900, height = 700)
+```
+<hr>
+
+### Order
+
+```{r echo=FALSE, message=FALSE}
+source("Processen/DiagOrderverwerking.R")
+render_graph(graph, width = 900, height = 700)
+```
+<hr>
+
+### Inkoop
+
+(tab content)
+<hr>
+
+### Ontvangst
+
+(tab content)
+<hr>
+
+### Productie
+
+(tab content)
+<hr>
+
+### Opslag
+
+(tab content)
+<hr>
+
+### Transport
+
+(tab content)
+<hr>
+
+### Levering
+
+(tab content)
+<hr>

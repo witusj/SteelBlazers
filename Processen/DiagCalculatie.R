@@ -9,12 +9,12 @@ library(gsheet)
 
 edgeData <-
   gsheet2tbl(
-    'https://docs.google.com/spreadsheets/d/15aXQQjNM0Q_WwtXqW2Qd6Q1lwmc_SX1Px4VtAgZfh6w/pub?gid=0&single=true&output=csv'
+    'https://docs.google.com/spreadsheets/d/10uIPKLnETv1JcugpK4Eon_sNfrPBo-mzm7RiAgWtLJQ/pub?gid=0&single=true&output=csv'
   )
 
 nodeData <-
   gsheet2tbl(
-    'https://docs.google.com/spreadsheets/d/15aXQQjNM0Q_WwtXqW2Qd6Q1lwmc_SX1Px4VtAgZfh6w/pub?gid=887688557&single=true&output=csv'
+    'https://docs.google.com/spreadsheets/d/10uIPKLnETv1JcugpK4Eon_sNfrPBo-mzm7RiAgWtLJQ/pub?gid=887688557&single=true&output=csv'
   )
 
 edgeData$From_node <- gsub(" ", "\n", edgeData$From_node)

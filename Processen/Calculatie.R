@@ -1,6 +1,6 @@
 # Laad aanvragen
 source("Aanvragen.R")
-materiaal <- unique(per_datum$Materiaal)
+materiaal <- unique(dfAanvraagCorr$Materiaal)
 
 # Bereken uiterste productiedatum (reserveer 2 dagen expeditie uit)
 dfAanvraagCorr <- mutate(dfAanvraagCorr, Productiedatum = Datum + Levertermijn - 3)

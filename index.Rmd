@@ -1,0 +1,18 @@
+---
+title: "Inleiding"
+output: html_document
+---
+
+Deze casus is ontworpen t.b.v. de minor Smart Industry van de Hogeschool Arnhem en Nijmegen en kan worden gebruikt onder volgende Creative Commons licentie.
+
+## De onderneming
+
+Steel Blazers produceert op maat gesneden elementen uit metaalplaten. Hiervoor hebben ze de beschikking over twee lasersnijmachines.
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AMJ8NaQ2b-w" frameborder="0" allowfullscreen></iframe>
+
+<br>
+
+
+<hr>

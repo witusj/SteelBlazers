@@ -1,0 +1,14 @@
+name: "Steel Blazers"
+navbar:
+  title: "Casus: Steel Blazers"
+  left:
+    - text: "Inleiding"
+      href: index.html
+    - text: "Processen"
+      href: processen.html
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    include:
+      after_body: footer.html
