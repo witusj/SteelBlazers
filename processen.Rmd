@@ -16,7 +16,7 @@ De klant stuurt een aanvraag per mail. De aanvraag moet minimaal volgende gegeve
 4. Materiaal
 5. Gewenste levertermijn
 
-Als alle de aanvraag geen omissies bevat, krijgt de klant een bevestiging dat de aanvraag in goede orde is ontvangen. De aanvraag wordt toegevoegd aan een spreadsheet en doorgestuurd naar een Calculator. Zie [hier](https://raw.githubusercontent.com/witusj/SteelBlazers/master/aanvragen.csv) voor een overzicht van alle aanvragen voor het jaar 2016. 
+Als de aanvraag geen omissies bevat, krijgt de klant een bevestiging dat de aanvraag in goede orde is ontvangen. De aanvraag wordt toegevoegd aan een spreadsheet en doorgestuurd naar een Calculator. Zie [hier](https://raw.githubusercontent.com/witusj/SteelBlazers/master/aanvragen.csv) voor een overzicht van alle aanvragen voor het jaar 2016. 
 
 ```{r echo=FALSE, message=FALSE}
 source("Processen/DiagAanvraag.R")

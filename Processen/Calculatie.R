@@ -55,7 +55,7 @@ xrange <- c(min(dfAanvraagCorr$Datum), max(dfAanvraagCorr$Productiedatum))
 yrange <- range(per_proddatum$Kosten) 
 
 # Aantal grafieken per rij en kolom
-par(mfrow=c(2,length(materiaal)))
+par(mfrow=c(2,length(materiaal)), adj=1)
 
 # Bouw plots
 
@@ -73,7 +73,7 @@ for (i in materiaal) {
 }
 
 # Voeg titels toe 
-title("Totale kosten per aanvraagdatum")
+title("Kosten per aanvraagdatum")
 
 
 for (i in materiaal) {
@@ -90,4 +90,4 @@ for (i in materiaal) {
 }
 
 # Voeg titels toe 
-title("Totale kosten per productiedatum")
+title("Kosten per productiedatum")
