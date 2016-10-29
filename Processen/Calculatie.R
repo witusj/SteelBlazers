@@ -80,7 +80,7 @@ for (i in materiaal) {
   
   k <- which(materiaal == i)
   
-  plot(xrange, yrange, type="n", xlab = "",
+  plot(xrange, yrange, type="n", xlab = "D",
        ylab="Kosten", sub = paste0("Productiedatum: ",i)) 
   colors <- rainbow(length(materiaal))
   linetype <- c(1:length(materiaal))
