@@ -8,12 +8,6 @@ output: html_document
 Hier worden de processen beschreven.
 
 ### Aanvraag
-
-```{r echo=FALSE, message=FALSE}
-source("Processen/DiagAanvraag.R")
-render_graph(graph, width = 900, height = 700)
-```
-
 De klant stuurt een aanvraag per mail. De aanvraag moet minimaal volgende gegevens bevatten:
 
 1. Naam en gegevens
@@ -22,23 +16,33 @@ De klant stuurt een aanvraag per mail. De aanvraag moet minimaal volgende gegeve
 4. Materiaal
 5. Gewenste levertermijn
 
-Als alle de aanvraag geen omissies bevat, krijgt de klant een bevestiging dat de aanvraag in goede orde is ontvangen.
+Als alle de aanvraag geen omissies bevat, krijgt de klant een bevestiging dat de aanvraag in goede orde is ontvangen. De aanvraag wordt toegevoegd aan een spreadsheet en doorgestuurd naar een Calculator. Zie [hier](https://raw.githubusercontent.com/witusj/SteelBlazers/master/aanvragen.csv) voor een overzicht van alle aanvragen voor het jaar 2016. 
+
+```{r echo=FALSE, message=FALSE}
+source("Processen/DiagAanvraag.R")
+render_graph(graph, width = 900, height = 700)
+```
+
 <hr>
 
 ### Calculatie
-
+De Calculator berekent hoeveel materiaal nodig is om de bestelling te realiseren, controleert of er voldoende capaciteit is om binnen de gevraagde levertermijn te kunnen leveren en berekent de totale kosten.
+Zie [hier](https://raw.githubusercontent.com/witusj/SteelBlazers/master/kosten.csv) voor een overzicht van de berekende kosten per aanvraag. Het kostenoverzicht met een bevestiging van de levertermijn wordt teruggestuurd naar de verkoopafdeling.
 ```{r echo=FALSE, message=FALSE}
 source("Processen/DiagCalculatie.R")
 render_graph(graph, width = 900, height = 700)
 ```
+
 <hr>
 
 ### Offerte
+De verkoopafdeling controleert of de klant met de waarde van de bestelling nog binnen de door de verzekeraar gestelde kredietlimiet blijft. Als dit het geval is, wordt op basis van de calculatie een offerte opgesteld en naar de klant gestuurd.
 
 ```{r echo=FALSE, message=FALSE}
 source("Processen/DiagOfferte.R")
 render_graph(graph, width = 900, height = 700)
 ```
+
 <hr>
 
 ### Order

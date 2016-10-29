@@ -3,7 +3,7 @@ title: "Inleiding"
 output: html_document
 ---
 
-Deze casus is ontworpen t.b.v. de minor Smart Industry van de Hogeschool Arnhem en Nijmegen en kan worden gebruikt onder een [Creative Commons licentie](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+Deze casus is ontworpen t.b.v. de minor [Smart Industry van de Hogeschool Arnhem en Nijmegen](https://witusj.github.io/MinorSI/) en kan worden gebruikt onder een [Creative Commons licentie](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## De onderneming
 
