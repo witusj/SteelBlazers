@@ -1,7 +1,5 @@
 ---
 title: "Processen"
-author: "Witek ten Hove"
-date: "10/29/2016"
 output: html_document
 ---
 
