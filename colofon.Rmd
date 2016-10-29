@@ -1,0 +1,7 @@
+---
+title: "Colofon"
+author: "Witek ten Hove"
+date: "10/29/2016"
+output: html_document
+---
+Deze casus is ontworpen t.b.v. de minor [Smart Industry van de Hogeschool Arnhem en Nijmegen](https://witusj.github.io/MinorSI/) en kan worden gebruikt onder een Creative Commons licentie.

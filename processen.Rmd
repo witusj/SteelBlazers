@@ -20,7 +20,7 @@ Als de aanvraag geen omissies bevat, krijgt de klant een bevestiging dat de aanv
 
 ```{r echo=FALSE, message=FALSE}
 source("Processen/DiagAanvraag.R")
-render_graph(graph, width = 900, height = 700)
+render_graph(graph, width = 900, height = 500)
 ```
 
 <hr>
@@ -35,7 +35,7 @@ source("Processen/Calculatie.R")
 
 ```{r echo=FALSE, message=FALSE}
 source("Processen/DiagCalculatie.R")
-render_graph(graph, width = 900, height = 700)
+render_graph(graph, width = 900, height = 500)
 ```
 <hr>
 
@@ -44,7 +44,7 @@ De verkoopafdeling controleert of de klant met de waarde van de bestelling nog b
 
 ```{r echo=FALSE, message=FALSE}
 source("Processen/DiagOfferte.R")
-render_graph(graph, width = 900, height = 700)
+render_graph(graph, width = 900, height = 500)
 ```
 
 
@@ -54,7 +54,7 @@ render_graph(graph, width = 900, height = 700)
 
 ```{r echo=FALSE, message=FALSE}
 source("Processen/DiagOrderverwerking.R")
-render_graph(graph, width = 900, height = 700)
+render_graph(graph, width = 900, height = 500)
 ```
 <hr>
 
@@ -69,8 +69,12 @@ render_graph(graph, width = 900, height = 700)
 <hr>
 
 ### Productie
+Binnen het productieproces is alles gericht op het voorkomen van afval. De inkoopprijs van metaal is hoog en de verkoopprijs van restmateriaal laag (nihil). Soms wordt een productie-order uitgesteld om deze te kunnen combineren met een andere order, zodat uit één metaalplaat meer onderdelen kunnen worden gesneden. Als echter de levertermijn kort is (5 dagen) dan heeft dit een negatief effect op de leverbetrouwbaarheid.
 
-(tab content)
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AMJ8NaQ2b-w" frameborder="0" allowfullscreen></iframe>
+
 <hr>
 
 ### Opslag

@@ -6,9 +6,11 @@ navbar:
       href: index.html
     - text: "Processen"
       href: processen.html
+    - text: "Colofon"
+      href: colofon.html
 output:
   html_document:
-    theme: paper
+    theme: united
     highlight: textmate
     include:
       after_body: footer.html
