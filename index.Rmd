@@ -25,6 +25,6 @@ plot(cbsLine)
 De klanten van Steel Blazers bevinden zich voornamelijk in een straal van 250 km en gebruiken de bestelde metaalelementen in hun eigen eindproduct. Momenteel worden alleen 2-dimensionale elementen geleverd. De laatste tijd vragen klanten regelmatig of de firma ook 3-dimensionale producten kan leveren (bijv. buizen en gebogen materiaal). Er is blijkbaar nog geen producent in de regio die deze combinatie van diensten kan aanbieden.
 
 ## Investeringen
-Beide lasersnijmachines zijn in 2008 aangeschaft en aan het einde van hun levensduur (restwaarde: 50.000 EUR per machine). Nieuwe machines kosten 700.000 EUR per stuk. Deze machines zijn 30% efficienter in stroomverbruik en beschikken over een API (de oude machines konden alleen handmatig worden geprogrammeerd).
+Beide lasersnijmachines zijn in 2008 aangeschaft en aan het einde van hun levensduur (restwaarde: 50.000 EUR per machine). Nieuwe machines kosten 700.000 EUR per stuk. Deze machines zijn ca. 50% efficienter in stroomverbruik en beschikken over een API (de oude machines konden alleen handmatig worden geprogrammeerd).
 
 <hr>
