@@ -9,7 +9,7 @@ source("Processen/Aanvragen.R")
 Deze casus gaat over Steel Blazers, een dienstverlener in de metaalsector. Eigenaren Frans en Kees Walreder willen hun groeitempo versnellen en nog meer volume draaien. Door processen slimmer in te richten willen ze de efficiëntie verhogen en tegen nog **lagere tarieven** hun diensten aanbieden. Daarbij moet het voor de klant **gemakkelijker** worden om orders aan te leveren. Bovendien moet de **leverbetrouwbaarheid** omhoog naar 99% (is nu 90%).
 
 ## De onderneming
-Steel Blazers produceert op maat gesneden elementen uit metaalplaten voor derden. De onderneming is in 2008 opgericht door de gebroeders Walreder. Frans heeft 10 jaar commerciële ervaring en jongere broer Kees heeft een technische achtergrond.
+Steel Blazers produceert op maat gesneden elementen uit metaalplaten voor derden. De onderneming is in 2008 opgericht door de gebroeders Walreder. Frans beschikte toen al over 10 jaar commerciële ervaring en jongere broer Kees heeft een technische achtergrond. Beide broers leiden het bedrijf, waarbij Frans zich meer bezighoud met de externe (commerciële) en Kees met de interne (operationele) activiteiten.
 
 Sinds de oprichting is de onderneming sterk gegroeid zowel qua klantaantallen (momenteel: `r dim(frmKlanten)[1]`) als volume. Inmiddels is de orderstroom voldoende om twee computergestuurde lasersnijders aan het werk te houden. De marges voor metaalsnijden zijn erg smal en daarom zijn volume en efficiëntie de belangrijkste factoren om winstgevend te blijven.
 
