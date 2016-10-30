@@ -209,7 +209,130 @@ $(document).ready(function () {
 
 <div id="section" class="section level2 tabset">
 <h2></h2>
-<p>Hier worden de processen beschreven.</p>
+<p>Het primaire proces bestaat uit een aantal hieronder beschreven subprocessen. Aan de afzonderlijke subprocessen zijn verschillende rollen verbonden.</p>
+<!-- Table generated in R 3.3.0 by googleVis 0.5.10 package -->
+<!-- Sun Oct 30 13:24:21 2016 -->
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataTableID17a12275720a () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "Verkoper",
+1,
+42200,
+42200 
+],
+[
+ "Calculator",
+2,
+49850,
+99700 
+],
+[
+ "Magazijnmedewerker",
+1,
+31400,
+31400 
+],
+[
+ "Operator",
+3,
+38300,
+114900 
+],
+[
+ "Spediteur",
+1,
+32800,
+32800 
+],
+[
+ "Debiteurenbeheerder",
+1,
+32800,
+32800 
+] 
+];
+data.addColumn('string','Rol');
+data.addColumn('number','Aantal FTEs');
+data.addColumn('number','Kosten per FTE');
+data.addColumn('number','Totale Kosten');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartTableID17a12275720a() {
+var data = gvisDataTableID17a12275720a();
+var options = {};
+options["allowHtml"] = true;
+
+  var dataFormat1 = new google.visualization.NumberFormat({pattern:"#,###"});
+  dataFormat1.format(data, 2);
+  var dataFormat2 = new google.visualization.NumberFormat({pattern:"#,###"});
+  dataFormat2.format(data, 3);
+
+    var chart = new google.visualization.Table(
+    document.getElementById('TableID17a12275720a')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "table";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartTableID17a12275720a);
+})();
+function displayChartTableID17a12275720a() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+<!-- jsChart -->
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartTableID17a12275720a"></script>
+<!-- divChart -->
+<div id="TableID17a12275720a" style="width: 500; height: automatic;">
+
+</div>
+<br>
+<hr>
 <div id="aanvraag" class="section level3">
 <h3>Aanvraag</h3>
 <p>De klant stuurt een aanvraag per mail. De aanvraag moet minimaal volgende gegevens bevatten:</p>
@@ -228,7 +351,7 @@ $(document).ready(function () {
 <div id="calculatie" class="section level3">
 <h3>Calculatie</h3>
 <p>De Calculator berekent hoeveel materiaal nodig is om de bestelling te realiseren, controleert of er voldoende capaciteit is om binnen de gevraagde levertermijn te kunnen leveren en berekent de totale kosten. Zie <a href="https://raw.githubusercontent.com/witusj/SteelBlazers/master/kosten.csv">hier</a> voor een overzicht van de berekende kosten per aanvraag. Het kostenoverzicht met een bevestiging van de levertermijn wordt teruggestuurd naar de verkoopafdeling.</p>
-<p><img src="processen_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="processen_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <div id="htmlwidget-5793" style="width:900px;height:500px;" class="grViz html-widget"></div>
 <script type="application/json" data-for="htmlwidget-5793">{"x":{"diagram":"digraph {\n\ngraph [layout = dot,\n       rankdir = LR,\n       label = \"Proces: Calculatie\",\n       labelloc = \"t\"]\n\nnode [fontname = Helvetica]\n\nedge [arrowsize = 0.6,\n     fontname = Helvetica]\n\n  \"Klantaanvraagproces\" [color = \"black\", shape = \"circle\", width = \"1\", fixedsize = \"false\", fontsize = \"10\"] \n  \"Verkoop\nstuurt\naanvraag\nnaar\ncalculator\" [color = \"black\", shape = \"rectangle\", width = \"1\", fixedsize = \"false\", fontsize = \"10\"] \n  \"Aanvraag\" [color = \"black\", shape = \"note\", width = \"1\", fixedsize = \"false\", fontsize = \"10\"] \n  \"Calculator\nberekent\nprijs\nen\ntermijn\" [color = \"black\", shape = \"rectangle\", width = \"1\", fixedsize = \"false\", fontsize = \"10\"] \n  \"Prijsopgaaf\nen\ntermijn\" [color = \"black\", shape = \"note\", width = \"1\", fixedsize = \"false\", fontsize = \"10\"] \n  \"ERP\" [color = \"black\", shape = \"box3d\", width = \"1\", fixedsize = \"false\", fontsize = \"10\"] \n  \"Prijs\nmateriaal\" [color = \"black\", shape = \"note\", width = \"1\", fixedsize = \"false\", fontsize = \"10\"] \n  \"Capaciteit\" [color = \"black\", shape = \"note\", width = \"1\", fixedsize = \"false\", fontsize = \"10\"] \n  \"Verkoopproces\" [color = \"black\", shape = \"circle\", width = \"1\", fixedsize = \"false\", fontsize = \"10\"] \n\"Klantaanvraagproces\"->\"Verkoop\nstuurt\naanvraag\nnaar\ncalculator\" [color = \"black\", label = \"START\", penwidth = \"2\", fontsize = \"8\"] \n\"Verkoop\nstuurt\naanvraag\nnaar\ncalculator\"->\"Aanvraag\" [color = \"black\", penwidth = \"2\", fontsize = \"8\", style = \"dashed\"] \n\"Aanvraag\"->\"Calculator\nberekent\nprijs\nen\ntermijn\" [color = \"black\", penwidth = \"2\", fontsize = \"8\", style = \"dashed\"] \n\"ERP\"->\"Prijs\nmateriaal\" [color = \"black\", penwidth = \"2\", fontsize = \"8\", style = \"dashed\"] \n\"Prijs\nmateriaal\"->\"Calculator\nberekent\nprijs\nen\ntermijn\" [color = \"black\", penwidth = \"2\", fontsize = \"8\", style = \"dashed\"] \n\"ERP\"->\"Capaciteit\" [color = \"black\", penwidth = \"2\", fontsize = \"8\", style = \"dashed\"] \n\"Capaciteit\"->\"Calculator\nberekent\nprijs\nen\ntermijn\" [color = \"black\", penwidth = \"2\", fontsize = \"8\", style = \"dashed\"] \n\"Calculator\nberekent\nprijs\nen\ntermijn\"->\"Prijsopgaaf\nen\ntermijn\" [color = \"black\", penwidth = \"2\", fontsize = \"8\", style = \"dashed\"] \n\"Prijsopgaaf\nen\ntermijn\"->\"Verkoopproces\" [color = \"black\", penwidth = \"2\", fontsize = \"8\", style = \"dashed\"] \n}","config":{"engine":null,"options":null}},"evals":[],"jsHooks":[]}</script>
 <hr>

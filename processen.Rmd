@@ -5,7 +5,15 @@ output: html_document
 
 ## {.tabset}
 
-Hier worden de processen beschreven.
+Het primaire proces bestaat uit een aantal hieronder beschreven subprocessen. Aan de afzonderlijke subprocessen zijn verschillende rollen verbonden.
+
+```{r echo=FALSE, message=FALSE, results='asis'}
+source("Rollen/Rollen.R")
+plot(tblRollen)
+```
+
+<br>
+<hr>
 
 ### Aanvraag
 De klant stuurt een aanvraag per mail. De aanvraag moet minimaal volgende gegevens bevatten:
