@@ -11,7 +11,7 @@ frmJaarrekening[is.na(frmJaarrekening)] <-NULL
 tblJaarrekening <- htmlTable(frmJaarrekening,
                              cgroup=c("Activa", "Passiva"),
                              n.cgroup=c(2,2),
-                             caption="Balans per 31.12.2015 (in EUR)",
+                             caption="Balans per 31.12.2015 (bedragen in EUR)",
                              align="lrlr",
                              rnames=FALSE,
                              css.cell = c("padding-left: .5em; padding-right: .8em;",
