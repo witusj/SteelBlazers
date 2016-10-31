@@ -1,0 +1,16 @@
+---
+title: "Financieel"
+output: html_document
+---
+## Jaarrekening
+
+```{r echo=FALSE, message=FALSE}
+library(htmlTable)
+source("Financieel/Jaarrekening.R")
+tblJaarrekening
+```
+
+## Investeringen
+Beide lasersnijmachines zijn in 2008 aangeschaft en aan het einde van hun levensduur (restwaarde: 50.000 EUR per machine). Nieuwe machines kosten 700.000 EUR per stuk. Deze machines zijn ca. 50% efficienter in stroomverbruik en beschikken over een API (de oude machines konden alleen handmatig worden geprogrammeerd).
+
+<hr>

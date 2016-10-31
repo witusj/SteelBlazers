@@ -4,8 +4,12 @@ navbar:
   left:
     - text: "Inleiding"
       href: index.html
+    - text: "De markt"
+      href: markt.html
     - text: "Processen"
       href: processen.html
+    - text: "Financieel"
+      href: financieel.html
     - text: "Colofon"
       href: colofon.html
 output:

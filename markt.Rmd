@@ -1,0 +1,15 @@
+---
+title: "De markt"
+output: html_document
+---
+De Nederlandse markt voor metaalverwerking blijft stabiel en wordt gekenmerkt door sterke seizoensfluctuaties. De vooruitzichten zijn gematigd positief met een verwachte groei van 1.5% in 2017. (*Bron: [Rabobank](https://www.rabobankcijfersentrends.nl/index.cfm?action=branche&branche=Metaalproductenindustrie)*)
+
+```{r echo=FALSE, message=FALSE, results='asis'}
+source("cbsProductie.R")
+plot(cbsLine)
+```
+*Bron: [CBS](http://statline.cbs.nl/Statweb/publication/?DM=SLNL&PA=81810NED&D1=0&D2=29&D3=170-172,174-180,182-184,187-189,191-196&HDR=G2&STB=G1,T&VW=T)*
+
+De klanten van Steel Blazers bevinden zich voornamelijk in een straal van 250 km en gebruiken de bestelde metaalelementen in hun eigen eindproduct. Momenteel worden alleen 2-dimensionale elementen geleverd. De laatste tijd vragen klanten regelmatig of de firma ook 3-dimensionale producten kan leveren (bijv. buizen en gebogen materiaal). Er is blijkbaar nog geen producent in de regio die deze combinatie van diensten kan aanbieden.
+
+<hr>
