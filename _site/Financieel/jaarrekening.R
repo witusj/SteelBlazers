@@ -1,6 +1,7 @@
 library(gsheet)
 library(googleVis)
 library(dplyr)
+source("Rollen/Rollen.R")
 
 frmJaarrekening <- gsheet2tbl(
   'https://docs.google.com/spreadsheets/d/1KB9PlhP7K4ghBpZsdzUBiQgsUw97SZVnP4hRiZT927M/pub?output=csv'
