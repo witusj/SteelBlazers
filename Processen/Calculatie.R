@@ -91,3 +91,6 @@ for (i in materiaal) {
 
 # Voeg titels toe 
 title("Kosten per productiedatum")
+
+p <- recordPlot()
+plot.new() ## clean up device

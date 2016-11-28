@@ -39,6 +39,7 @@ Zie [hier](https://raw.githubusercontent.com/witusj/SteelBlazers/master/kosten.c
 
 ```{r echo=FALSE, echo=FALSE, message=FALSE}
 source("Processen/Calculatie.R")
+p
 ```
 
 ```{r echo=FALSE, message=FALSE}

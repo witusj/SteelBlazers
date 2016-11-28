@@ -23,7 +23,7 @@ for(k in frmKlanten$Naam) {
   n <- sample(10:100,1)                                                 # Aantal bestellingen
   
   aanvDatum <- sample(varDate, n, replace = FALSE, prob = NULL)         # Sample n data
-  aanvAantal <- round(abs(rnorm(n,100,50)))+5                             # Sample aantallen uit normale verdeling
+  aanvAantal <- round(abs(rnorm(n,100,50)))+5                           # Sample aantallen uit normale verdeling
   aanvTekening <- sample(boolTek, n) == 1                               # Sample technische tekeningen
   aanvMateriaal <- sample(boolMat, n)                                   # Sample materiaal
   aanvTermijn <- sample(boolTerm, n)                                    # Sample levertermijn
